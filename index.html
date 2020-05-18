@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="game-title">Rock, Paper, Scissor!</h1>
+    <h2 id="game-rules">Game Rules!</h2>
+    <div id="players-score">
+      <h3><strong>You</strong>
+      <p id="players-scorecard"><strong>0</strong></p>
+    </div>
+    <div id="computers-score">
+      <h3><strong>CPU</strong>
+      <p id="computers-scorecard"><strong>0</strong></p>
+    </div>
+    <div id="reset-game">
+      <button type="button" onclick=gameReset()>Reset Score</button>
+    </div>
+    <div class="rule-list">
+        <ol>
+          <li>Choose one from rock, paper, scissor by clicking on the icons below.</li>
+          <li>Rock crushes scissor but it is covered by paper.</li>
+          <li>Paper covers the rock but it is cut by scissors.</li>
+          <li>Scissor is crushed by rock but cuts paper.</li>
+          <li>The player who picks the stronger object wins.</li>
+        </ol>
+    </div>
+    <h2 id="game-play">Play against the Computer!</h2>
+    <section class="game-icons">
+        <a id="clickable-images">
+          <img id="rock" onclick="game(this.id)" src="stone.png" alt="Rock" width="200" height="200">
+          <img id="paper" onclick="game(this.id)" src="paper.png" alt="Paper" width="200" height="200">
+          <img id="scissors" onclick="game(this.id)" src="scissors.png" alt="Scissors" width="200" height="200">
+        </a>
+        <p id="result-description"></p>
+        <h2 id="final-result"></h2>
+        <script type="text/javascript" src="gamelogic.js"></script>
+    </section>
+</body>
+</html>
