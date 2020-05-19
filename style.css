@@ -27,11 +27,7 @@
 
 #reset-game {
   float: right;
-  padding-top: 150px;
-}
-
-#scorecard {
-  padding-left: 1050px;
+  padding-top: 100px;
 }
 
 .rule-list {
@@ -40,6 +36,7 @@
 
 .game-icons {
   padding-left: 250px;
+  display: inline-block;
 }
 
 body {
