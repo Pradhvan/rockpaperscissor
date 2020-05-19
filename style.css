@@ -6,59 +6,51 @@
   padding: 20px;
   margin: 0 0;
 }
-
 #game-rules {
   padding-left: 250px;
 }
-
 #game-play {
   padding-left: 250px;
 }
-
 #players-score {
   float: right;
   padding-right: 100px;
 }
-
 #computers-score {
   float: right;
   padding-right: 100px;
 }
-
 #reset-game {
   float: right;
   padding-top: 100px;
 }
-
 .rule-list {
   padding-left: 256px;
 }
-
 .game-icons {
   padding-left: 250px;
   display: inline-block;
 }
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: #d3d3d333;
 }
-
 #result-description {
   font-size: x-large;
 }
-
 button {
   background-color: white;
   color: black;
   font-size: x-large;
 }
-
 @media screen and (max-width: 600px) {
+  #game-title{
+    padding: 2px;
+  }
   .rule-list {
-    font-size: 30px;
+    font-size: 20px;
     display: inline-block;
     width: 100%;
     padding-left: 5%;
@@ -66,12 +58,24 @@ button {
   #game-play {
     display: inline-block;
     width: 100%;
-    padding-left: 0%
+    padding-left: 0%;
   }
   .game-icons {
-    padding-left: 25%;
+    padding-left: 0px;
   }
-
+  #rock {
+    width: 100px;
+    height: 100px;
+    padding-left: 0px;
+  }
+  #paper {
+    width: 100px;
+    height: 100px;
+  }
+  #scissors {
+    width: 100px;
+    height: 100px;
+  }
   #game-rules {
     padding-left: 0%;
   }
@@ -79,14 +83,18 @@ button {
   display: inline-block;
   padding-right: 10%;
   font-size: 20px;
+  margin-top: -10%;
   }
   #computers-score {
   display: inline-block;
   padding-right: 10%;
   font-size: 20px;
+  margin-top: -10%;
   }
   #reset-game {
-    padding-right: 10%;
+    /*padding-right: 20%;*/
+    margin-top: 4.75%;
+    padding-left: 1%;
   }
   body {
     overflow-x: hidden;
