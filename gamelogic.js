@@ -22,17 +22,17 @@ function playRound(playerSelection, computerSelection) {
   ((playerSelection=="paper") && (computerSelection=="rock")) ||
   ((playerSelection=="rock") && (computerSelection=="scissors"))){
       playerscore++;
-      result = `You chose ${playerSelection} and CPU chose ${computerSelection}!. YOU win!`;
+      result = `You chose ${playerSelection} and CPU chose ${computerSelection}. YOU win!`;
       return result;
 
   } else if (((playerSelection=="scissors")&&(computerSelection=="rock")) ||
   ((playerSelection=="rock") && (computerSelection=="paper")) ||
   ((playerSelection=="paper")&&(computerSelection=="scissors"))){
     computerscore++;
-    result = `You chose ${playerSelection} and CPU chose ${computerSelection}!. Computer wins!`;
+    result = `You chose ${playerSelection} and CPU chose ${computerSelection}. Computer wins!`;
     return result;
   } else if (playerSelection == computerSelection) {
-    result = `You and the CPU chose ${computerSelection}!. Match Draw!`;
+    result = `You and the CPU chose ${computerSelection}. Match Draw!`;
     return result;
 }
 }
