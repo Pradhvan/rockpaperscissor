@@ -49,3 +49,50 @@ body {
 #result-description {
   font-size: x-large;
 }
+
+button {
+  background-color: white;
+  color: black;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 600px) {
+  .rule-list {
+    font-size: 30px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 5%;
+  }
+  #game-play {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0%
+  }
+  .game-icons {
+    padding-left: 25%;
+  }
+
+  #game-rules {
+    padding-left: 0%;
+  }
+  #players-score {
+  display: inline-block;
+  padding-right: 10%;
+  font-size: 20px;
+  }
+  #computers-score {
+  display: inline-block;
+  padding-right: 10%;
+  font-size: 20px;
+  }
+  #reset-game {
+    padding-right: 10%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  button {
+    padding-left: 10%;
+    margin-top: -50%;
+  }
+}
