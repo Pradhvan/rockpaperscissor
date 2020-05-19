@@ -39,6 +39,7 @@ body {
 }
 #result-description {
   font-size: x-large;
+  color: black;
 }
 button {
   background-color: white;
@@ -64,17 +65,19 @@ button {
     padding-left: 0px;
   }
   #rock {
-    width: 100px;
-    height: 100px;
-    padding-left: 0px;
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
   }
   #paper {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    padding-left: 55px;
   }
   #scissors {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
   }
   #game-rules {
     padding-left: 0%;

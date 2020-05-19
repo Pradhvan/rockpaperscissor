@@ -48,10 +48,7 @@ function game(element_id) {
   const playerSelection = element_id;
   const computerSelection = computerPlay();
   finalResult = playRound(playerSelection, computerSelection);
-  let resultDescription=finalResult.split(".")[0];
-  document.getElementById('result-description').innerHTML=resultDescription;
-  let gameresult=finalResult.split(".")[1];
-  document.getElementById('final-result').innerHTML = gameresult;
+  document.getElementById('result-description').innerHTML=finalResult;
   document.getElementById('players-scorecard').innerHTML = Number(playerscore);
   document.getElementById('computers-scorecard').innerHTML = Number(computerscore);
 }
